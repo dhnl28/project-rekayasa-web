@@ -26,7 +26,7 @@
                                     style="width: 120px; height: 120px; object-fit: cover;">
                             </div>
                                 <h5 class="card-title mb-4">Profile Mahasiswa</h5>
-                                <span class="badge-bg-success">{{ $mahasiswa['status'] }}</span>
+                                <span class="badge rounded-pill bg-success">{{ $mahasiswa['status'] }}</span>
                         </div>
                             </div class="card-body text-center">
                             <p class="card-text"><strong>Nama:</strong> {{ $mahasiswa['nama'] }}</p>
