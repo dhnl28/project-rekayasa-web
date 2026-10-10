@@ -7,10 +7,10 @@ use App\Models\Project;
 class ProjectController extends Controller
 {
     public function index()
-    {
-        $projects = Project::all();
-        return view('page.project', compact('projects'));
-    }
+{
+    $projects = Project::paginate(6);
+    return view('page.project', compact('projects'));
+}
 
     public function show($id)
     {
